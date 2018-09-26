@@ -1,7 +1,7 @@
 // Required Applications
 var chef_bot = require('slackbots');
 var Botkit = require('botkit');
-var controller = Botkit.anywhere();
+var controller = Botkit.slackbot();
 var bot = new chef_bot({
     token: 'xoxb-19690340884-442332787617-ddD3nJw8KiVBvUYztHkCtcsZ', // Added chef bot token
     name: 'Chef Bot'
@@ -22,5 +22,8 @@ bot.on('start', function() {
 });
 
 // trying to the bot something to listen for and reply with bot.reply message
-            controller.hears('Yes', 'message_received',function(bot,message) ;
-            bot.reply(message,'Awesome! Lets get cooking...')
+            controller.hears('Yes', 'message_received',function(bot,message)  {
+            bot.postMessageToChannel('Awesome! Lets get cooking...')
+
+
+});
