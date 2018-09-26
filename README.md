@@ -3,7 +3,7 @@
     var Botkit = require('botkit');
     var controller = Botkit.slackbot();
     var bot = new chef_bot({
-        token: 'xoxb-19690340884-442332787617-ddD3nJw8KiVBvUYztHkCtcsZ', // Added chef bot token
+        token: 'xoxb-TOKEN ID HERE', // Added chef bot token
         name: 'Chef Bot'
     });
 
